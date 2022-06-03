@@ -24,10 +24,10 @@ function lakukanLooping(arrPegawai) {
       Contoh: ["Aisyah Nirmala", "Mansur Faisal", ...]
   */
   let hasilLooping = [];
-  let indexHasilLooping = 0
-  while (indexHasilLooping<dataYangAkanDilooping.length) {
-    hasilLooping.push(dataYangAkanDilooping[indexHasilLooping].namaDepan+dataYangAkanDilooping[indexHasilLooping].namaBelakang);
-    indexHasilLooping++;
+  for (let index = 0; index < dataYangAkanDilooping.length; index++) {
+    hasilLooping.push(dataYangAkanDilooping[index].namaDepan + dataYangAkanDilooping[index].namaBelakang);
+
+  }
 
     
   }
@@ -39,26 +39,26 @@ function lakukanLooping(arrPegawai) {
       yang berisi jumlah pria dari masing masing pegawai
   */
   let jumlahPria = 0;
-  let indexJumlahPria = 0;
 
-  while (indexJumlahPria<dataYangAkanDilooping.length) {
-    if(dataYangAkanDilooping[indexJumlahPria].jenisKelamin == "M")
-    jumlahPria++;
-  
+ for (let index = 0; index < dataYangAkanDilooping.length; index++) {
+   if (dataYangAkanDilooping[index].jenisKelamin == "M"){
+     jumlahPria += 1;
+   };
     
-  }
+    
+ }
+    
+  
 
   /*
     TODO 3: Buatlah sebuah variabel bernama "jumlahWanita"
       yang berisi jumlah wanita dari masing masing pegawai
   */
   let jumlahWanita = 0;
-  let indexJumlahWanita = 0;
-
-  while (indexJumlahWanita<dataYangAkanDilooping.length) {
-    if(dataYangAkanDilooping[indexJumlahWanita].jenisKelamin == "F")
-    jumlahWanita++;
-  }
+  for (let index = 0; index < dataYangAkanDilooping.length; index++) {
+    if (dataYangAkanDilooping[index].jenisKelamin == "F"){
+      jumlahWanita += 1;
+    };
   /*
     TODO 4: Buatlah sebuah variabel bernama "komentar"
       yang akan mengomentari apakah lebih banyak Pria atau Wanita
@@ -102,3 +102,4 @@ function main(data) {
 main(arrayObjectPegawai);
 
 module.exports = main;
+
