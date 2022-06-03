@@ -30,7 +30,7 @@ function lakukanLooping(arrPegawai) {
   }
 
     
-  }
+  
 
   
 
@@ -88,7 +88,7 @@ function lakukanLooping(arrPegawai) {
     komentar,
   };
 }
-
+}
 function main(data) {
   const hasil = lakukanLooping(data || arrayObjectPegawai);
 
