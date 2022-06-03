@@ -25,7 +25,7 @@ function lakukanLooping(arrPegawai) {
   */
   let hasilLooping = [];
   for (let index = 0; index < dataYangAkanDilooping.length; index++) {
-    hasilLooping.push(dataYangAkanDilooping[index].namaDepan + dataYangAkanDilooping[index].namaBelakang);
+    hasilLooping.push(dataYangAkanDilooping[index].namaDepan +" "+dataYangAkanDilooping[index].namaBelakang);
 
   }
 
@@ -56,9 +56,12 @@ function lakukanLooping(arrPegawai) {
   */
   let jumlahWanita = 0;
   for (let index = 0; index < dataYangAkanDilooping.length; index++) {
-    if (dataYangAkanDilooping[index].jenisKelamin == "F"){
+    if (dataYangAkanDilooping[index].jenisKelamin =="F"){
       jumlahWanita += 1;
     };
+    
+  }
+ 
   /*
     TODO 4: Buatlah sebuah variabel bernama "komentar"
       yang akan mengomentari apakah lebih banyak Pria atau Wanita
@@ -88,7 +91,7 @@ function lakukanLooping(arrPegawai) {
     komentar,
   };
 }
-}
+
 function main(data) {
   const hasil = lakukanLooping(data || arrayObjectPegawai);
 
