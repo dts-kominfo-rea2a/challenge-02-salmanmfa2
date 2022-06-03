@@ -74,13 +74,12 @@ function lakukanLooping(arrPegawai) {
         "Jumlah Pria dan Wanita berimbang"
   */
   let komentar = "";
-  if(jumlahPria == jumlahWanita){
-   komentar = "Jumlah pria dan wanita berimbang";
-  }
-  else if (jumlahPria > jumlahWanita){
-    komentar = "Jumlah pria lebih banyak dari wanita";
-  } else {
-    komentar - "Jumlah Wanita lebih banyak dari Pria";
+  if (jumlahPria > jumlahWanita){
+    komentar = "jumlah pria lebih banyak dari wanita";
+  } else if (jumlahWanita > jumlahPria){
+    komentar = "jumlah wanita lebih banyak dari pria";
+  } else{
+    komentar ="jumlah pria dan wanita seimbang";
   }
 
   // ! JANGAN DIMODIFIKASI
